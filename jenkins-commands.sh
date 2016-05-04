@@ -1,0 +1,3 @@
+docker run -v /var/run/docker.sock:/var/run/docker.sock -v /mnt/git:/mnt/git -i docker:1.10.3 sh -c "cd /mnt/git/example-voting-app-master/worker ; docker build -t localhost/worker ."
+docker run -v /var/run/docker.sock:/var/run/docker.sock -v /mnt/git:/mnt/git -i docker:1.10.3 sh -c "cd /mnt/git/example-voting-app-master/result-app ; docker build -t localhost/rasult-app ."
+docker run -v /var/run/docker.sock:/var/run/docker.sock -v /mnt/git:/mnt/git -i docker:1.10.3 sh -c "cd /mnt/git/example-voting-app-master/voting-app ; docker build -t localhost/voting-app ."
